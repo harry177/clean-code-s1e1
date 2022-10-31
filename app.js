@@ -127,7 +127,7 @@ var taskCompleted=function(){
     //Append the task list item to the #completed-tasks
     var listItem=this.parentNode;
     completedTasksHolder.appendChild(listItem);
-    listItem.children[1].className="rewrite__task";
+    listItem.children[1].classList.add("completed__label");
     bindTaskEvents(listItem, taskIncomplete);
 
 }
@@ -140,6 +140,7 @@ var taskIncomplete=function(){
     //Append the task list item to the #incompleteTasks.
     var listItem=this.parentNode;
     incompleteTaskHolder.appendChild(listItem);
+    listItem.children[1].classList.remove("completed__label");
     bindTaskEvents(listItem,taskCompleted);
 }
 
