@@ -72,6 +72,7 @@ var addTask=function(){
 
     //Append listItem to incompleteTaskHolder
     incompleteTaskHolder.appendChild(listItem);
+    listItem.children[1].id = "listed__label";
     bindTaskEvents(listItem, taskCompleted);
 
     taskInput.value="";
