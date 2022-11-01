@@ -97,9 +97,17 @@ var editTask=function(){
 
         //switch to .editmode
         //label becomes the inputs value.
+        listItem.children[1].classList.add("task");
+        listItem.children[1].classList.remove("edit__task");
+        listItem.children[2].classList.add("input__text");
+        listItem.children[2].classList.remove("edit__input__text");
         label.innerText=editInput.value;
         editBtn.innerText="Edit";
     }else{
+        listItem.children[1].classList.add("edit__task");
+        listItem.children[1].classList.remove("task");
+        listItem.children[2].classList.add("edit__input__text");
+        listItem.children[2].classList.remove("input__text");
         editInput.value=label.innerText;
         editBtn.innerText="Save";
     }

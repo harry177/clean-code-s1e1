@@ -43,15 +43,6 @@
   vertical-align: middle;
 }
 
-.rewrite__task {
-    width: 56%;
-    display: inline-block;
-    flex-grow: 1;
-    vertical-align: middle;
-    text-decoration: line-through;
-    color: #888;
-}
-
 .task-row__wrapper {
   display: flex;
 }
@@ -128,6 +119,7 @@
   border-radius: 6px;
   font-family: Lato, sans-serif;
   color: #888;
+  width: 318px;
 }
 
 .new-task__input__text:focus {
@@ -139,10 +131,6 @@
 .new-task__label {
   display: block;
   margin: 0 0 20px;
-}
-
-input#new-task {
-  width: 318px;
 }
 
 /* Task list */
@@ -199,15 +187,24 @@ input#new-task {
 
 /* Edit Task */
 
-ul
-li.edit__mode 
-.input__text {
+.edit__input__text {
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  height: 21px;
+  padding: 0 9px;
+  border: 1px solid #dDd;
+  background: #FFF;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  color: #888;
   display: inline-block;
   width: 224px;
 }
 
-ul
-li.edit__mode 
-label {
+.edit__task {
   display: none;
+  width: 56%;
+  flex-grow: 1;
+  vertical-align: middle;
 }
