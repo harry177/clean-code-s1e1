@@ -63,7 +63,6 @@ var createNewTaskElement=function(taskString){
 }
 
 
-
 var addTask=function(){
     console.log("Add Task...");
     //Create a new list item with the text from the #new-task:
@@ -84,7 +83,6 @@ var addTask=function(){
 var editTask=function(){
     console.log("Edit Task...");
     console.log("Change 'edit' to 'save'");
-
 
     var listItem=this.parentNode;
 
@@ -194,13 +192,11 @@ for (var i=0; i<incompleteTaskHolder.children.length;i++){
 
 
 
-
 //cycle over completedTasksHolder ul list items
 for (var i=0; i<completedTasksHolder.children.length;i++){
     //bind events to list items chldren(tasksIncompleted)
     bindTaskEvents(completedTasksHolder.children[i],taskIncomplete);
 }
-
 
 
 
